@@ -1,0 +1,33 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(10, 10, 114);
+    height: 150px;
+    color: white;
+    font-size: 2em;
+    text-align: CENTER;
+    justify-content: center;
+    align-items: CENTER;
+}
+
+.copyright {
+    font-size: 0.5em;
+    margin-top: 5px;
+
+}
+
+.socials-footer {
+    display: flex;
+    gap: 20px;
+}
+
+.logo-footer {
+    width: 30px;
+    padding: 3px;
+    border-radius: 20px;
+    background-color: white;
+    cursor: pointer;
+    &:hover {
+     opacity: 0.6;
+    }
+}

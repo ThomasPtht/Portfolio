@@ -1,0 +1,69 @@
+.about-container {
+    padding: 100px 0;
+    background-color: ghostwhite;
+ 
+}
+
+#about-title {
+    padding-top: 50px;
+}
+
+
+.underline {
+    border-bottom: 4px solid orange;
+    margin: 0 auto 15px;
+    width: 70px;
+    border-radius: 5px;
+    animation-fill-mode: both;
+    animation-duration: 1000ms;
+    animation-delay: 0ms;
+    animation-iteration-count: 1;
+    opacity: 1;
+    animation-name: react-reveal-228327765648582-3;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 6rem;
+    margin: 80px 35px;
+    @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+
+    }
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+
+}
+
+
+.square {
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.491);
+   font-size: 1.5rem;
+    padding: 15px;
+    border: none;
+    background-color: rgba(164, 164, 164, 0.358);
+    margin-bottom: 3px;
+    border-radius: 4px;
+    font-size: 1.1em;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.square:hover {
+    background-color: blue;
+    color: whitesmoke;
+    transition: 0.4s;
+}
+
+
+
+
+.presentation {
+    line-height: 1.7;
+    text-align: left;
+}
