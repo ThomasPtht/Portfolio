@@ -14,19 +14,19 @@ position:initial
 .text-container {
   color:black;
   font-size: 3.5em;
-   padding-top: 70px;
    letter-spacing: 0.10em;
 
 }
 
 .typewriter {
   overflow: hidden; /* Pour masquer le texte qui dépasse */
+  border-right: 4px solid orange;
   white-space: nowrap; /* Pour afficher le texte en une seule ligne */
   margin: 0 auto;
-  letter-spacing: 0.10em; /* Espacement entre les lettres (ajustez selon vos préférences) */
+  letter-spacing: 0.10em; 
   animation: typewriter 4s steps(21) infinite alternate,
-  blink 800ms step-end infinite ;
-border-right: 5px solid orange;
+  blink 800ms step-end infinite;
+
  
 }
 

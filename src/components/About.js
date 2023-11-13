@@ -40,6 +40,9 @@ const About = () => {
             souhaitant également me reconvertir dans ce domaine qui m’intéresse,
             j’ai décidé de franchir le pas de me former afin de devenir
             développeur web.
+            <br />
+            Une formation enrichissante de 6 mois qui m'aura permis de savoir
+            créer un site de zéro. Que ce soit une simple page statique
           </p>
         </div>
       </div>

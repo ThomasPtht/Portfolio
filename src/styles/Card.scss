@@ -15,6 +15,11 @@
   }
 }
 
+.image-container {
+  position: relative;
+ 
+}
+
 .card-image {
   position: relative;
   height: 201px;
@@ -22,22 +27,22 @@
   border-radius: 15px;
   transition: filter 0.3s;
 
-  &:hover {
-    filter: brightness(0.6);
-  }
+  
+}
+.image-container:hover .card-image {
+  filter: brightness(0.6);
 }
 
-.card-image:hover + .icons {
+.image-container:hover .icons {
   display: flex;
 }
-
-
 .icons {
  display: none;
  gap: 30px;
   position: absolute;
-  top: 120px;
-  left: 35%;
+  top: 50%; /* Center the icons vertically */
+  left: 50%; /* Center the icons horizontally */
+  transform: translate(-50%, -50%); /* Center the icons precisely */
 
 }
 

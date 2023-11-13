@@ -1,8 +1,34 @@
-import React from "react";
+import React, { useRef } from "react";
 import "../styles/Contact.scss";
 import Mail from "../assets/Mail-sent.svg";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
+  const form = useRef();
+
+  //Empêche le rechargement de la page
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_j9wmrjj",
+        "template_radhzq4",
+        form.current,
+        "pVZhs85_G5TxPO_Mx"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          // Réinitialise les champs du formulaire
+          form.current.reset();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <div className="contact-block">
       <h2 id="contact-title">Contact</h2>
@@ -15,22 +41,25 @@ const Contact = () => {
           </p>
           <img className="mail-picture" src={Mail} alt="" />
         </div>
+
         <div className="form-container">
-          <form>
+          <form ref={form} onSubmit={sendEmail}>
             <label>
               <input
                 className="name"
                 type="text"
-                name="name"
+                name="user_name"
                 placeholder="Nom et prénom"
+                required
               />
             </label>
             <label>
               <input
                 className="mail"
-                type="text"
-                name="email"
+                type="email"
+                name="user_mail"
                 placeholder="Mail"
+                required
               />
             </label>
 
@@ -38,6 +67,7 @@ const Contact = () => {
               className="message"
               name="message"
               placeholder="Votre message"
+              required
             ></textarea>
 
             <input className="submit" type="submit" value="Envoyer" />

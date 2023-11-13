@@ -2,15 +2,15 @@ import React from "react";
 import linkedin from "../assets/logo-linkedin.png";
 import github from "../assets/github-logo.png";
 import envelope from "../assets/envelope.png";
-// import { useState } from "react";
+import { useState } from "react";
 import "../styles/Socials.scss";
 import LightMode from "./LightMode";
 
 function Socials() {
-  // const [themeMode, setSwitch] = useState(true);
+  // const [lightModeVisible, setLightMode] = useState(false);
 
-  // const handclick = () => {
-  //   setSwitch(!themeMode);
+  // const toggleLightMode = () => {
+  //   setLightMode(!lightModeVisible);
   // };
 
   return (
@@ -40,9 +40,7 @@ function Socials() {
           </a>
         </div>
 
-        <div>
-          <LightMode />
-        </div>
+        <LightMode />
       </div>
     </div>
   );

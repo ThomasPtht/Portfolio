@@ -7,10 +7,13 @@
 
 }
 
-.name:hover {
+.name {
+  font-size: 1em;
+&:hover {
 color: blue;
 transition: color 0.4s;
 cursor: pointer;
+}
 }
 
 .header-content {
@@ -52,15 +55,18 @@ nav a:hover {
 
 .button-cv {
     color: white;
-    font-size: 1em;
+    font-size: 0.8em;
     background-color: orange;
     cursor: pointer;
     border: none;
     border-radius: 5px;
     padding: 10px;
     transition: transform 400ms;
+
     &:hover{
     transform: scale(1.10);
+    color: white;
+    
     }
 }
 

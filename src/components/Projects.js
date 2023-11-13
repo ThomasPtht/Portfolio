@@ -18,13 +18,29 @@ import React from "react";
 import Card from "./Card";
 
 const Projects = () => {
+  const revealCardsContainer = () => {
+    const container = document.querySelector(".cards-container");
+    const containerTop = container.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (containerTop < windowHeight) {
+      container.classList.add("active");
+    } else {
+      container.classList.remove("active");
+    }
+  };
+
+  window.addEventListener("scroll", revealCardsContainer);
+
   return (
     <div className="projects-container">
       <h2 id="projects-title">PROJETS</h2>
       <div className="underline"></div>
-      <div className="cards-container">
+      <div className="cards-container reveal fade-bottom">
         <Card
           image={Kasa}
+          eyeLink="https://kasa-project-react.netlify.app"
+          githubLink="https://github.com/ThomasPtht/Kasa"
           title="Kaza"
           text="Intégration d'une page d'accueil d'une agence de voyage à partir d'une maquette figma. 
           Utilisation de media queries afin de rendre le site responsive sur ordinateurs, tablettes et mobiles.  "
@@ -35,6 +51,8 @@ const Projects = () => {
 
         <Card
           image={MVG}
+          eyeLink=""
+          githubLink="https://github.com/ThomasPtht/Mon-vieux-grimoire"
           title="Mon vieux grimoire"
           text="Développement du back-end d'un site de notation de livres. Structuration du code (contrôleurs, routeurs, middlewares...), mise en oeuvre d'opérations CRUD de manière sécurisée, implémentation d'un système d'authentification.  "
         >
@@ -44,6 +62,8 @@ const Projects = () => {
         </Card>
         <Card
           image={Bluel}
+          eyeLink="https://kasa-project-react.netlify.app"
+          githubLink="https://github.com/ThomasPtht/Sophie-Bluel"
           title="Sophie Bluel"
           text="Lorem ipsum dolor sit amet consectetur
       adipisicing elit. Ea ducimus nobis eveniet tenetur, distinctio aliquid
@@ -58,6 +78,8 @@ const Projects = () => {
         </Card>
         <Card
           image={Nina}
+          eyeLink="https://nina-carducci-project.netlify.app/"
+          githubLink="https://github.com/ThomasPtht/nina-carducci.github.io"
           title="Nina Carducci"
           text="Lorem ipsum dolor sit amet consectetur
       adipisicing elit. Ea ducimus nobis eveniet tenetur, distinctio aliquid
@@ -68,6 +90,8 @@ const Projects = () => {
         />
         <Card
           image={Booki}
+          eyeLink="https://booki-177e95.netlify.app/"
+          githubLink="https://github.com/ThomasPtht/BOOKI"
           title="Booki"
           text="Lorem ipsum dolor sit amet consectetur
       adipisicing elit. Ea ducimus nobis eveniet tenetur, distinctio aliquid
@@ -81,6 +105,7 @@ const Projects = () => {
         </Card>
         <Card
           image={Manaia}
+          eyeLink="https://manaia-bijoux.fr/"
           title="Manaia bijoux"
           text="Création d'une boutique e-commerce avec Wordpress et l'intégration du thème Astra.
            Ajout de différents plugins permettant d'optimiser le site. Rédaction de fiches produits après l'étude de mots clés liés à l'activité (Travail de référencement On page). Analyse de données via Google Analytics et la Search Console."

@@ -12,20 +12,20 @@ const Header = () => {
     setMenuVisible(!menuVisible);
   };
 
-  const toggleLightMode = () => {
-    setLightMode(!lightModeVisible);
-  };
+  // const toggleLightMode = () => {
+  //   setLightMode(!lightModeVisible);
+  // };
 
   return (
     <header className="header">
       <div className="header-content">
         <img src={logo} alt="logo" className="logo" />
-        <p className="name">THOMAS POTHERAT</p>
+        <h1 className="name">THOMAS POTHERAT</h1>
       </div>
 
-      <div className="light-mode">
-        <LightMode toggleLightMode={toggleLightMode} />
-      </div>
+      {/* <div className="light-mode"> */}
+      <LightMode />
+      {/* </div> */}
       <div class="hamburger-menu">
         <input
           id="menu__toggle"
@@ -65,7 +65,13 @@ const Header = () => {
         <a href="#about-title">a propos</a>
         <a href="#projects-title">mes projets</a>
         <a href="#contact-title">contact</a>
-        <button className="button-cv">Télécharger CV</button>
+        <a
+          href="https://drive.google.com/file/d/19wJJJx3w0ieO-0XNyf-TysBaa02sEECX/view?usp=drive_link"
+          target="_blank"
+          className="button-cv"
+        >
+          Télécharger CV
+        </a>
       </nav>
     </header>
   );

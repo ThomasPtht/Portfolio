@@ -11,11 +11,11 @@ const Banner = () => {
           <span className="wave-emoji" role="img" aria-label="waving hand">
             👋
           </span>
-          <br />
-          Je suis <span className="firstname">Thomas Potherat</span>, <br />
-          <span className="typewriter">développeur front-end </span>
         </p>
+        Je suis <span className="firstname">Thomas Potherat</span>, <br />
+        <p className="typewriter">développeur front-end </p>
       </div>
+
       <span class="scroll-btn">
         <a href="#about-title">
           <span class="mouse">
