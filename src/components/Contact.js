@@ -46,7 +46,7 @@ const Contact = () => {
           <form ref={form} onSubmit={sendEmail}>
             <label>
               <input
-                className="name"
+                className="name-form"
                 type="text"
                 name="user_name"
                 placeholder="Nom et prénom"

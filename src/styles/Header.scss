@@ -14,6 +14,9 @@ color: blue;
 transition: color 0.4s;
 cursor: pointer;
 }
+@media (max-width: 450px) {
+  font-size: 0.9em;
+   }
 }
 
 .header-content {
@@ -28,7 +31,7 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 25px;
+    gap: 20px;
     padding-right: 15px;
 }
 
@@ -40,17 +43,23 @@ nav a {
     text-transform:uppercase;
     text-decoration: none;
     transition: color 0.4s;
-    
-  
+&:hover {
+  color: blue;  
+}
 }
 
-nav a:hover {
-    color: blue;
-   
-    // border-bottom: solid 2px orange;
-    
- 
-    
+.nav-light {
+  display: flex;
+  gap: 20px;
+}
+
+
+.light-mode {
+  display: flex;
+  align-items: center;
+  @media (max-width: 900px) {
+    transform: translateX(-60px);
+  }
 }
 
 .button-cv {
@@ -72,14 +81,6 @@ nav a:hover {
 
 .logo {
 width: 70px;
-}
-
-
-// LightMode
-@media (min-width: 901px) {
-  .light-mode {
-    display: none; 
-  }
 }
 
 

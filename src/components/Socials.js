@@ -2,17 +2,9 @@ import React from "react";
 import linkedin from "../assets/logo-linkedin.png";
 import github from "../assets/github-logo.png";
 import envelope from "../assets/envelope.png";
-import { useState } from "react";
 import "../styles/Socials.scss";
-import LightMode from "./LightMode";
 
 function Socials() {
-  // const [lightModeVisible, setLightMode] = useState(false);
-
-  // const toggleLightMode = () => {
-  //   setLightMode(!lightModeVisible);
-  // };
-
   return (
     <div className="socials-container">
       <div className="buttons-socials">
@@ -39,8 +31,6 @@ function Socials() {
             <img src={envelope} alt="" className="envelope" />
           </a>
         </div>
-
-        <LightMode />
       </div>
     </div>
   );

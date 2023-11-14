@@ -16,14 +16,14 @@ const Banner = () => {
         <p className="typewriter">développeur front-end </p>
       </div>
 
-      <span class="scroll-btn">
+      <span className="scroll-btn">
         <a href="#about-title">
-          <span class="mouse">
+          <span className="mouse">
             <span></span>
           </span>
         </a>
       </span>
-      <div>
+      <div className="socials">
         <Socials />
       </div>
     </div>
