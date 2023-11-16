@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Banner.scss";
 import Socials from "../components/Socials";
+import Fade from "react-reveal/Fade";
 
 const Banner = () => {
   return (
@@ -19,12 +20,14 @@ const Banner = () => {
       <span className="scroll-btn">
         <a href="#about-title">
           <span className="mouse">
-            <span></span>
+            <span className="cursor"></span>
           </span>
         </a>
       </span>
       <div className="socials">
-        <Socials />
+        <Fade bottom>
+          <Socials />
+        </Fade>
       </div>
     </div>
   );

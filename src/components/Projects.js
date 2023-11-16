@@ -3,7 +3,6 @@ import Bluel from "../assets/Bluel-capture.png";
 import Kasa from "../assets/kasa.png";
 import Booki from "../assets/Booki.png";
 import Manaia from "../assets/Manaia-bijoux.png";
-import Nina from "../assets/nina-carducci.png";
 import ReactLogo from "../assets/react-logo.png";
 import Wordpress from "../assets/Wordpress-logo.png";
 import Express from "../assets/expressjs-logo.png";
@@ -14,6 +13,7 @@ import Html from "../assets/html-logo.png";
 import Css from "../assets/css-logo.png";
 import Sass from "../assets/sass-logo.png";
 import Mongo from "../assets/mongodb-logo.png";
+import Portfolio from "../assets/portfolio.png";
 import React from "react";
 import Card from "./Card";
 
@@ -42,8 +42,17 @@ const Projects = () => {
           eyeLink="https://kasa-project-react.netlify.app"
           githubLink="https://github.com/ThomasPtht/Kasa"
           title="Kaza"
-          text="Intégration d'une page d'accueil d'une agence de voyage à partir d'une maquette figma. 
-          Utilisation de media queries afin de rendre le site responsive sur ordinateurs, tablettes et mobiles.  "
+          text={
+            <>
+              Intégration d'une page d'accueil d'une agence de voyage à partir
+              d'une maquette figma.
+              <br />
+              <br />
+              Utilisation de composants React, utilisation de hooks pour gérer
+              l'état, et transmission de données via les props. Ajout de media
+              queries pour assurer la responsivité du site.
+            </>
+          }
         >
           <img className="tech-logo" src={ReactLogo} alt="" />
           <img className="tech-logo" src={Sass} alt="" />
@@ -54,7 +63,8 @@ const Projects = () => {
           eyeLink=""
           githubLink="https://github.com/ThomasPtht/Mon-vieux-grimoire"
           title="Mon vieux grimoire"
-          text="Développement du back-end d'un site de notation de livres. Structuration du code (contrôleurs, routeurs, middlewares...), mise en oeuvre d'opérations CRUD de manière sécurisée, implémentation d'un système d'authentification.  "
+          text="
+          Conception du backend d'une plateforme d'évaluation de livres, incluant une organisation structurée du code. Mise en place sécurisée des opérations CRUD pour interagir avec la base de données, tout en intégrant un système d'authentification pour renforcer la sécurité de l'ensemble du système."
         >
           <img className="tech-logo" src={Node} alt="" />
           <img className="tech-logo" src={Express} alt="" />
@@ -65,40 +75,26 @@ const Projects = () => {
           eyeLink="https://kasa-project-react.netlify.app"
           githubLink="https://github.com/ThomasPtht/Sophie-Bluel"
           title="Sophie Bluel"
-          text="Lorem ipsum dolor sit amet consectetur
-      adipisicing elit. Ea ducimus nobis eveniet tenetur, distinctio aliquid
-      minima veritatis alias temporibus assumenda possimus ut, consequuntur
-      deleniti a saepe. Doloremque commodi voluptatibus amet deleniti tempora
-      temporibus culpa delectus dolorum quaerat et eius, aut consequuntur illum
-      non architecto quod quidem ea ex nulla officiis!"
+          text="Création d'une page web dynamique pour une architecte, intégrant la gestion dynamique des travaux via une API. Cette solution inclut un filtre permettant de trier les travaux par catégorie, en plus des fonctionnalités d'ajout et de suppression de travaux à travers l'API, ainsi que la conception d'une page de connexion pour l'administrateur."
         >
           <img className="tech-logo" src={JavascriptLogo} alt="" />
           <img className="tech-logo" src={Html} alt="" />
           <img className="tech-logo" src={Css} alt="" />
         </Card>
         <Card
-          image={Nina}
-          eyeLink="https://nina-carducci-project.netlify.app/"
-          githubLink="https://github.com/ThomasPtht/nina-carducci.github.io"
-          title="Nina Carducci"
-          text="Lorem ipsum dolor sit amet consectetur
-      adipisicing elit. Ea ducimus nobis eveniet tenetur, distinctio aliquid
-      minima veritatis alias temporibus assumenda possimus ut, consequuntur
-      deleniti a saepe. Doloremque commodi voluptatibus amet deleniti tempora
-      temporibus culpa delectus dolorum quaerat et eius, aut consequuntur illum
-      non architecto quod quidem ea ex nulla officiis!"
+          image={Portfolio}
+          eyeLink=""
+          githubLink="https://github.com/ThomasPtht/Portfolio"
+          title="Portfolio"
+          text="
+          La conception de mon portfolio avec React a été l'occasion d'appliquer mes compétences acquises, mettant en œuvre une structure basée sur des composants. J'ai également utilisé Sass pour une gestion avancée des styles, tout en intégrant des librairies pour optimiser le formulaire et ajouter des effets spécifiques, contribuant ainsi à un résultat dynamique et professionnel."
         />
         <Card
           image={Booki}
           eyeLink="https://booki-177e95.netlify.app/"
           githubLink="https://github.com/ThomasPtht/BOOKI"
           title="Booki"
-          text="Lorem ipsum dolor sit amet consectetur
-      adipisicing elit. Ea ducimus nobis eveniet tenetur, distinctio aliquid
-      minima veritatis alias temporibus assumenda possimus ut, consequuntur
-      deleniti a saepe. Doloremque commodi voluptatibus amet deleniti tempora
-      temporibus culpa delectus dolorum quaerat et eius, aut consequuntur illum
-      non architecto quod quidem ea ex nulla officiis!"
+          text="Intégration d'une interface pour une agence de voyages impliquant l'utilisation de Flexbox pour une mise en page flexible, des media queries pour des breakpoints adaptés aux divers appareils, et une validation systématique du code aux normes W3C, assurant ainsi la conformité et la qualité du site."
         >
           <img className="tech-logo" src={Html} alt="" />
           <img className="tech-logo" src={Css} alt="" />
@@ -107,8 +103,8 @@ const Projects = () => {
           image={Manaia}
           eyeLink="https://manaia-bijoux.fr/"
           title="Manaia bijoux"
-          text="Création d'une boutique e-commerce avec Wordpress et l'intégration du thème Astra.
-           Ajout de différents plugins permettant d'optimiser le site. Rédaction de fiches produits après l'étude de mots clés liés à l'activité (Travail de référencement On page). Analyse de données via Google Analytics et la Search Console."
+          text="
+          Élaboration d'une boutique en ligne sous WordPress en utilisant le thème Astra, ajout de divers plugins pour optimiser les performances du site. Rédaction de fiches produits basée sur l'analyse de mots-clés pour renforcer le référencement On-page. Analyse des données à travers Google Analytics et la Search Console."
         >
           <img className="tech-logo" src={Wordpress} alt="" />
         </Card>

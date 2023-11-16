@@ -24,7 +24,7 @@
     align-items: center;
     font-size: 1.5em;
     font-weight: 600;
-    color: rgb(13, 13, 151);
+    color: darkblue
 }
 
 
@@ -36,7 +36,7 @@
 .form-container {
     width: 320px;
     height: 400px;
-    background-color: rgba(10, 1, 111, 0.831);
+    background-color: darkblue;
     border-radius: 10px;
     padding: 40px;
     box-shadow: 10px 10px 13px -7px rgba(0,0,0,0.4);
@@ -77,7 +77,7 @@ form {
 form input {
     border: none;
    border-radius: 5px;
-    background-color:whitesmoke;
+    background-color:white;
     box-shadow: 10px 10px 13px -7px rgba(0,0,0,0.1);
     width: 100%;
     height: 50px;
@@ -93,8 +93,7 @@ form input {
     display: flex;
     color: rgba(0, 55, 255, 0.619);
     font-size: 1.1em;
-   
-   
+    padding-left: 5px;
 }
 
 
@@ -104,8 +103,8 @@ form input {
     justify-content: center;
     align-self: flex-end;
     height: 45px;
-    border-radius: 15px;
-    color: blue;
+    border-radius: 10px;
+    color: darkblue;
     font-weight: bold;
     font-size: 1.1em;
     cursor: pointer;

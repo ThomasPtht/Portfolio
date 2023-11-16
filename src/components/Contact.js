@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import "../styles/Contact.scss";
 import Mail from "../assets/Mail-sent.svg";
 import emailjs from "emailjs-com";
+import Zoom from "react-reveal/Zoom";
 
 const Contact = () => {
   const form = useRef();
@@ -33,6 +34,7 @@ const Contact = () => {
     <div className="contact-block">
       <h2 id="contact-title">Contact</h2>
       <div className="underline"></div>
+
       <div className="contact-container">
         <div className="contact-content">
           <p>
@@ -41,38 +43,39 @@ const Contact = () => {
           </p>
           <img className="mail-picture" src={Mail} alt="" />
         </div>
+        <Zoom right>
+          <div className="form-container">
+            <form ref={form} onSubmit={sendEmail}>
+              <label>
+                <input
+                  className="name-form"
+                  type="text"
+                  name="user_name"
+                  placeholder="Nom et prénom"
+                  required
+                />
+              </label>
+              <label>
+                <input
+                  className="mail"
+                  type="email"
+                  name="user_mail"
+                  placeholder="Mail"
+                  required
+                />
+              </label>
 
-        <div className="form-container">
-          <form ref={form} onSubmit={sendEmail}>
-            <label>
-              <input
-                className="name-form"
-                type="text"
-                name="user_name"
-                placeholder="Nom et prénom"
+              <textarea
+                className="message"
+                name="message"
+                placeholder="Votre message"
                 required
-              />
-            </label>
-            <label>
-              <input
-                className="mail"
-                type="email"
-                name="user_mail"
-                placeholder="Mail"
-                required
-              />
-            </label>
+              ></textarea>
 
-            <textarea
-              className="message"
-              name="message"
-              placeholder="Votre message"
-              required
-            ></textarea>
-
-            <input className="submit" type="submit" value="Envoyer" />
-          </form>
-        </div>
+              <input className="submit" type="submit" value="Envoyer" />
+            </form>
+          </div>
+        </Zoom>
       </div>
     </div>
   );
