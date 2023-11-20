@@ -3,12 +3,17 @@ import linkedin from "../assets/logo-linkedin.png";
 import github from "../assets/github-logo.png";
 import envelope from "../assets/envelope.png";
 import "../styles/Socials.scss";
+import PropTypes from "prop-types";
 
-function Socials() {
+function Socials({ customStyle }) {
   return (
-    <div className="socials-container">
+    <div className={`socials-container ${customStyle ? "custom-socials" : ""}`}>
       <div className="buttons-socials">
-        <div className="container-git">
+        <div
+          className={`container-git ${
+            customStyle ? "custom-container-git" : ""
+          }`}
+        >
           <a
             href="https://github.com/ThomasPtht"
             target="_blank"
@@ -17,7 +22,11 @@ function Socials() {
             <img src={github} alt="logo github" className="github" />
           </a>
         </div>
-        <div className="container-linkedin">
+        <div
+          className={`container-linkedin ${
+            customStyle ? "custom-container-linkedin" : ""
+          }`}
+        >
           <a
             href="https://www.linkedin.com/in/thomas-potherat-923868166/"
             target="_blank"
@@ -26,7 +35,11 @@ function Socials() {
             <img src={linkedin} alt="logo linkedin" className="linkedin" />
           </a>
         </div>
-        <div className="container-envelope">
+        <div
+          className={`container-envelope ${
+            customStyle ? "custom-container-envelope" : ""
+          }`}
+        >
           <a href="mailto:t.potherat@laposte.net">
             <img src={envelope} alt="" className="envelope" />
           </a>
