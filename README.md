@@ -15,7 +15,6 @@ De plus, l'application tire parti de la bibliothèque React Reveal pour intégre
 Enfin, pour la gestion du formulaire, l'application utilise EmailJS, une bibliothèque facilitant l'envoi d'e-mails directement depuis l'application React. Cette intégration simplifie le processus de gestion des formulaires en utilisant des modèles prédéfinis et en offrant une solution sans nécessiter de backend supplémentaire.
 
 
-voir le site : thomas-potherat.fr
-
+voir le site : (thomas-potherat.fr)
 
 
