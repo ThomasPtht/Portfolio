@@ -50,9 +50,9 @@ const About = () => {
             <strong> développeur web</strong>. 🧑‍💻
             <br />
             Ma formation, étalée sur une période de 6 mois, s'est avérée être
-            une aventure stimulante. Elle m'a permis d'acquérir les compétences
-            nécessaires pour concevoir un site web de A à Z, que ce soit une
-            simple page statique ou un projet plus complexe.
+            une aventure enrichissante. Elle m'a permis d'acquérir les
+            compétences nécessaires pour concevoir un site web de A à Z, que ce
+            soit une simple page statique ou un projet plus complexe.
             <br />
             <br />
             Cette expérience formatrice a été l'occasion d'explorer et de
