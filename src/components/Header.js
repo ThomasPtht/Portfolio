@@ -18,6 +18,7 @@ const Header = () => {
         <h1 className="name">THOMAS POTHERAT</h1>
       </div>
 
+      {/* Burger menu  */}
       <div className="hamburger-menu">
         <input
           id="menu__toggle"
@@ -46,7 +47,12 @@ const Header = () => {
             </a>
           </li>
           <li>
-            <a className="menu__item" href="" onClick={toggle}>
+            <a
+              className="menu__item"
+              href="https://drive.google.com/file/d/19wJJJx3w0ieO-0XNyf-TysBaa02sEECX/view?usp=drive_link"
+              target="_blank"
+              onClick={toggle}
+            >
               mon cv
             </a>
           </li>
@@ -56,6 +62,7 @@ const Header = () => {
         <div className="light-mode">
           <ThemeButton />
         </div>
+        {/* Classic menu  */}
         <nav>
           <a href="#about-title">a propos</a>
           <a href="#projects-title">mes projets</a>

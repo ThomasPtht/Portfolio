@@ -24,6 +24,62 @@ h3 {
 .home {
     background: none;
     background-color: $background-color;
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+
+
+// Animation background : 
+
+    .cube {
+      position: absolute;
+      top: 80vh;
+      left: 25vw;
+      width: 5px;
+      height: 5px;
+      border: solid 1px darken(#ba9ffb, 8%);
+      transform-origin: top left;
+      transform: scale(0) rotate(0deg) translate(-50%, -50%);
+      animation: cube 12s ease-in forwards infinite;
+      
+      &:nth-child(2n) {
+        border-color: lighten(#ba9ffb, 10%);
+      }
+      
+      &:nth-child(2) {
+        animation-delay: 2s;
+        left: 8vw;
+        top: 25vh;
+      }
+      
+      &:nth-child(3) {
+        animation-delay: 4s;
+        left: 85vw;
+        top: 70vh;
+      }
+      
+      &:nth-child(4) {
+        animation-delay: 6s;
+        left: 90vw;
+        top: 35vh;
+      }
+      
+      &:nth-child(6) {
+        animation-delay: 10s;
+        left: 50vw;
+        top: 10vh;
+      }
+    }
+    
+    @keyframes cube {
+      from {
+        transform: scale(0) rotate(0deg) translate(-50%, -50%);   
+        opacity: 1;
+      }
+      to {
+        transform: scale(20) rotate(960deg) translate(-50%, -50%); 
+        opacity: 0;
+      }
+    }
+
 }
 
 .firstname, .cursor {
@@ -88,8 +144,13 @@ input, .message {
     background-color: rgba(245, 245, 245, 0.945);
 }
 
-blink {
-    border-color: whitesmoke;
+.menu__box {
+  background-color: $background-color
 }
 
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  background-color: #a688fa;
+}
 }

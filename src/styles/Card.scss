@@ -12,7 +12,15 @@
 
   @media (max-width: 400px) {
     width: 80%;
+    height: 435px;
   }
+}
+
+.card-text {
+  @media (max-width: 400px) {
+   font-size: 0.9em;
+         
+     }
 }
 
 .image-container {
@@ -26,7 +34,10 @@
   max-width: 100%;
   border-radius: 15px;
   transition: filter 0.3s;
-
+  @media (max-width: 400px) {
+    height: 160px;
+          
+      }
   
 }
 .image-container:hover .card-image {
@@ -68,6 +79,10 @@ text-align: left;
 padding-bottom: 0;
   font-size: 1.5em;
   color: rgb(0, 0, 159);
+  @media (max-width: 400px) {
+    font-size: 1.2em;
+          
+      }
 }
 
 .tech-buttons {

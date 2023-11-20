@@ -17,6 +17,13 @@
     }
 }
 
+.contact-text {
+    @media (max-width: 400px) {
+      font-size: 0.8em;
+             
+         }
+}
+
 .contact-content {
     display: flex;
     flex-direction: column;
@@ -47,7 +54,7 @@
         @media (max-width: 400px) {
            padding: 20px;
            height: 350px;
-           width: 90%;
+           width: 95%;
                 
             }
 }

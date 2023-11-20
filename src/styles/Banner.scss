@@ -4,7 +4,6 @@
  align-items: center;
 height: 100vh;
 background: linear-gradient(to right,rgba(245, 245, 245, 0.765),rgba(245, 245, 245, 0.664)),url(../assets/large-triangles.svg);
-height: calc(100vh - 75px);
 @media (max-width: 900px) {
 position:initial
 }
@@ -14,8 +13,11 @@ position:initial
   color:black;
   font-size: 2.8em;
    letter-spacing: 0.10em;
+  
    @media (max-width: 900px) {
 font-size: 2em;
+padding: 0 30px;
+
 	}
 
 }

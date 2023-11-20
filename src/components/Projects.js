@@ -87,8 +87,11 @@ const Projects = () => {
           githubLink="https://github.com/ThomasPtht/Portfolio"
           title="Portfolio"
           text="
-          La conception de mon portfolio avec React a été l'occasion d'appliquer mes compétences acquises, mettant en œuvre une structure basée sur des composants. J'ai également utilisé Sass pour une gestion avancée des styles, tout en intégrant des librairies pour optimiser le formulaire et ajouter des effets spécifiques, contribuant ainsi à un résultat dynamique et professionnel."
-        />
+          La conception de mon portfolio avec React a été l'occasion d'appliquer mes compétences acquises, mettant en œuvre une structure basée sur des composants. Utilisation de Sass pour une gestion avancée des styles, ajout de librairies pour optimiser le formulaire et ajouter des effets spécifiques, contribuant ainsi à un résultat dynamique et professionnel."
+        >
+          <img className="tech-logo" src={ReactLogo} alt="" />
+          <img className="tech-logo" src={Sass} alt="" />
+        </Card>
         <Card
           image={Booki}
           eyeLink="https://booki-177e95.netlify.app/"

@@ -1,5 +1,5 @@
 .about-container {
-    padding: 30px 0;
+    padding: 30px 20px;
     background-color: ghostwhite;
  
 }
@@ -78,5 +78,9 @@ align-items: center;
 .presentation {
     line-height: 1.5;
     text-align: left;
+    @media (max-width: 400px) {
+     font-size: 0.9em;
+              
+          }
 
 }

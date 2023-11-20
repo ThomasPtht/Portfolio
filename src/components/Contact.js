@@ -37,7 +37,7 @@ const Contact = () => {
 
       <div className="contact-container">
         <div className="contact-content">
-          <p>
+          <p className="contact-text">
             N'hésitez pas à me contacter via ce formulaire, <br />
             je vous répondrai avec plaisir ✌️
           </p>

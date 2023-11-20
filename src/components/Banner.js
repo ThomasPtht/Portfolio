@@ -16,6 +16,12 @@ const Banner = () => {
         Je suis <span className="firstname">Thomas Potherat</span>, <br />
         <p className="typewriter">développeur front-end </p>
       </div>
+      <div className="cube"></div>
+      <div className="cube"></div>
+      <div className="cube"></div>
+      <div className="cube"></div>
+      <div className="cube"></div>
+      <div className="cube"></div>
 
       <span className="scroll-btn">
         <a href="#about-title">
