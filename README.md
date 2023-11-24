@@ -1,70 +1,20 @@
-# Getting Started with Create React App
+# Portfolio 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+![Capture d'écran 2023-11-15 171913](https://github.com/ThomasPtht/Portfolio/assets/128037230/86387688-e739-4664-b992-731c207794a4)
 
-### `yarn start`
+Réalisée en React, cette application intègre différents composants conçus pour être réutilisés, offrant ainsi une architecture flexible. Parmi les composants, on retrouve entre autres des cartes représentant des projets, un bouton de basculement entre les modes clair et sombre (dark mode), ainsi que des boutons sociaux permettant de partager le contenu.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Pour la gestion du thème, le composant ThemeButton utilise un hook personnalisé nommé useTheme. Ce dernier n'est pas natif à React, mais plutôt défini dans le fichier ThemeContext.js. Ce fichier crée un contexte spécifique dédié à la gestion du thème (clair/sombre) de l'application. L'utilisation de ce hook permet de récupérer l'état actuel du thème et la fonction de bascule associée.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Le recours à useState est également utilisé pour gérer dynamiquement l'apparition et la disparition du burger menu dans l'application. Cette fonction native de React permet de maintenir un état local au sein d'un composant, adaptant ainsi le rendu en fonction des interactions de l'utilisateur.
 
-### `yarn test`
+De plus, l'application tire parti de la bibliothèque React Reveal pour intégrer des effets visuels, donnant vie à certains éléments de manière élégante et attrayante. Ces effets contribuent à améliorer l'expérience utilisateur en ajoutant une dimension interactive et engageante.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Enfin, pour la gestion du formulaire, l'application utilise EmailJS, une bibliothèque facilitant l'envoi d'e-mails directement depuis l'application React. Cette intégration simplifie le processus de gestion des formulaires en utilisant des modèles prédéfinis et en offrant une solution sans nécessiter de backend supplémentaire.
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+voir le site : (thomas-potherat.fr)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
