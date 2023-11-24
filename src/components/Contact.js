@@ -5,12 +5,14 @@ import emailjs from "emailjs-com";
 import Zoom from "react-reveal/Zoom";
 
 const Contact = () => {
+  // Création d'une référence pour le formulaire
   const form = useRef();
 
   //Empêche le rechargement de la page
   const sendEmail = (e) => {
     e.preventDefault();
 
+    // Envoi du formulaire par e-mail via emailjs
     emailjs
       .sendForm(
         "service_j9wmrjj",

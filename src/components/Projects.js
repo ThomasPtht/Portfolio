@@ -19,17 +19,25 @@ import Card from "./Card";
 
 const Projects = () => {
   const revealCardsContainer = () => {
+    // Sélectionne l'élément du DOM avec la classe "cards-container"
     const container = document.querySelector(".cards-container");
+
+    // Récupère la position relative de l'élément par rapport à la fenêtre du navigateur
     const containerTop = container.getBoundingClientRect().top;
+
+    // Récupère la hauteur de la fenêtre du navigateur
     const windowHeight = window.innerHeight;
 
+    // Vérifie si la partie supérieure de la "cards-container" est visible dans la fenêtre
     if (containerTop < windowHeight) {
+      // Ajoute la classe "active" si la "cards-container" est visible
       container.classList.add("active");
     } else {
+      // Supprime la classe "active" si la "cards-container" n'est pas visible
       container.classList.remove("active");
     }
   };
-
+  // Ajout d'un écouteur d'événements de défilement à la fenêtre qui appelle revealCardsContainer
   window.addEventListener("scroll", revealCardsContainer);
 
   return (

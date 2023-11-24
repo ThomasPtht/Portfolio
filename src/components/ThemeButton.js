@@ -3,6 +3,7 @@ import "../styles/ThemeButton.scss";
 import { useTheme } from "../components/ThemeContext.js";
 
 const ThemeButton = () => {
+  // Utilisation du hook useTheme pour accéder au mode de thème et à la fonction de bascule du thème
   const { themeMode, toggleTheme } = useTheme();
 
   console.log("ThemeButton rendered with themeMode:", themeMode);

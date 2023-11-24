@@ -4,7 +4,7 @@ $text-color: whitesmoke;
 
 
 h2, nav a, p, .text-container {
-  color: whitesmoke
+  color: $text-color
 }
 
 .name, nav a {
@@ -136,7 +136,7 @@ input, .message {
 
 .card, .form-container {
     background-color: #2f2b3a;
-    color: whitesmoke;
+    color: $text-color
 }
 
 

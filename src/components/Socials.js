@@ -3,12 +3,12 @@ import linkedin from "../assets/logo-linkedin.png";
 import github from "../assets/github-logo.png";
 import envelope from "../assets/envelope.png";
 import "../styles/Socials.scss";
-import PropTypes from "prop-types";
 
 function Socials({ customStyle }) {
   return (
     <div className={`socials-container ${customStyle ? "custom-socials" : ""}`}>
       <div className="buttons-socials">
+        {/* Ajout d'une classe supplémentaire pour l'utilisation du composant dans le composant Footer */}
         <div
           className={`container-git ${
             customStyle ? "custom-container-git" : ""

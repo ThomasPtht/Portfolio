@@ -5,8 +5,10 @@ import "../styles/Header.scss";
 import ThemeButton from "./ThemeButton";
 
 const Header = () => {
+  // État local pour gérer la visibilité du menu burger
   const [menuVisible, setMenuVisible] = useState(false);
 
+  // Fonction pour basculer la visibilité du menu burger
   const toggle = () => {
     setMenuVisible(!menuVisible);
   };
@@ -30,6 +32,7 @@ const Header = () => {
           <span></span>
         </label>
 
+        {/* Liste des éléments du menu burger */}
         <ul className={`menu__box ${menuVisible ? "open" : ""}`}>
           <li>
             <a className="menu__item" href="#about-title" onClick={toggle}>
@@ -58,6 +61,8 @@ const Header = () => {
           </li>
         </ul>
       </div>
+
+      {/* Section de navigation avec le bouton de changement de thème */}
       <div className="nav-light">
         <div className="light-mode">
           <ThemeButton />
