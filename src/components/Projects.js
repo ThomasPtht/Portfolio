@@ -14,6 +14,7 @@ import Css from "../assets/css-logo.png";
 import Sass from "../assets/sass-logo.png";
 import Mongo from "../assets/mongodb-logo.png";
 import Portfolio from "../assets/portfolio.png";
+import Meteo from "../assets/meteo-website.png";
 import React from "react";
 import Card from "./Card";
 
@@ -99,6 +100,18 @@ const Projects = () => {
         >
           <img className="tech-logo" src={ReactLogo} alt="" />
           <img className="tech-logo" src={Sass} alt="" />
+        </Card>
+        <Card
+          image={Meteo}
+          eyeLink="https://meteo-website.netlify.app/"
+          githubLink="https://github.com/ThomasPtht/Meteo-website"
+          title="Météo Website"
+          text="
+          Création d'une interface affichant les prévisions météorologiques actuelles et à venir pour une ville saisie dans la barre de recherche. Pour alimenter ces informations, j'ai utilisé l'API OpenWeatherMap, offrant un accès en temps réel aux données météorologiques mondiales."
+        >
+          <img className="tech-logo" src={JavascriptLogo} alt="" />
+          <img className="tech-logo" src={Html} alt="" />
+          <img className="tech-logo" src={Css} alt="" />
         </Card>
         <Card
           image={Booki}
