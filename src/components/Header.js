@@ -52,7 +52,7 @@ const Header = () => {
           <li>
             <a
               className="menu__item"
-              href="https://drive.google.com/file/d/19wJJJx3w0ieO-0XNyf-TysBaa02sEECX/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1X1fEXoc2TYPm467XAbAaeQeHaRRLU6jn/view?usp=drive_link"
               target="_blank"
               onClick={toggle}
             >
@@ -73,7 +73,7 @@ const Header = () => {
           <a href="#projects-title">mes projets</a>
           <a href="#contact-title">contact</a>
           <a
-            href="https://drive.google.com/file/d/19wJJJx3w0ieO-0XNyf-TysBaa02sEECX/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1X1fEXoc2TYPm467XAbAaeQeHaRRLU6jn/view?usp=drive_link"
             target="_blank"
             className="button-cv"
           >
