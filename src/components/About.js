@@ -20,6 +20,7 @@ const About = () => {
                 <div className="square">Javascript</div>
                 <div className="square">React</div>
                 <div className="square">SASS</div>
+                <div className="square">Tailwind</div>
                 <div className="square">Node.js</div>
                 <div className="square">Express</div>
                 <div className="square">MongoDB</div>
