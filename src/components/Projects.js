@@ -13,10 +13,13 @@ import Html from "../assets/html-logo.png";
 import Css from "../assets/css-logo.png";
 import Sass from "../assets/sass-logo.png";
 import Mongo from "../assets/mongodb-logo.png";
+import Tailwind from "../assets/tailwind.png";
+import Vite from "../assets/vite.png";
 import Portfolio from "../assets/portfolio.png";
 import Meteo from "../assets/meteo-website.png";
 import React from "react";
 import Card from "./Card";
+import ComU from "../assets/com-u.png";
 
 const Projects = () => {
   const revealCardsContainer = () => {
@@ -46,6 +49,29 @@ const Projects = () => {
       <h2 id="projects-title">PROJETS</h2>
       <div className="underline"></div>
       <div className="cards-container reveal fade-bottom">
+        <Card
+          image={ComU}
+          eyeLink="https://com-u-b7h2-cmcj0crhj-thomas-pthts-projects.vercel.app/"
+          githubLink="https://github.com/ThomasPtht/Com-U"
+          title="Com&U"
+          text={
+            <>
+              Projet personnel de création d'un site web pour une agence
+              marketing/communication
+              <br />
+              <br />
+              Réalisé avec React, le builder Vite et ainsi que Tailwind pour
+              appliquer le style. Les bibliothèques React Awesome et React
+              CountUp ont permis d'implémenter des effets visuels pour une
+              expérience utilisateur dynamique.
+            </>
+          }
+        >
+          <img className="tech-logo" src={ReactLogo} alt="" />
+          <img className="tech-logo" src={Vite} alt="" />
+          <img className="tech-logo" src={Tailwind} alt="" />
+        </Card>
+
         <Card
           image={Kasa}
           eyeLink="https://kasa-project-react.netlify.app"
