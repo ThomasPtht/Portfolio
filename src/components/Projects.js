@@ -51,7 +51,7 @@ const Projects = () => {
       <div className="cards-container reveal fade-bottom">
         <Card
           image={ComU}
-          eyeLink="https://com-u-b7h2-cmcj0crhj-thomas-pthts-projects.vercel.app/"
+          eyeLink="https://com-u-b7h2.vercel.app/"
           githubLink="https://github.com/ThomasPtht/Com-U"
           title="Com&U"
           text={
