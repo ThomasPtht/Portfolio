@@ -20,6 +20,7 @@ import Meteo from "../assets/meteo-website.png";
 import React from "react";
 import Card from "./Card";
 import ComU from "../assets/com-u.png";
+import Move from "../assets/move-on.png";
 
 const Projects = () => {
   const revealCardsContainer = () => {
@@ -50,6 +51,29 @@ const Projects = () => {
       <div className="underline"></div>
       <div className="cards-container reveal fade-bottom">
         <Card
+          image={Move}
+          eyeLink="https://move-on-pi.vercel.app/"
+          githubLink="https://github.com/ThomasPtht/Move-on"
+          title="Move'on"
+          text={
+            <>
+              Création d'une landing page pour une application de programmes
+              sportifs.
+              <br />
+              <br />
+              Construit avec la bibliothèque React et optimisé par le builder
+              Vite, ce projet bénéficie d'une esthétique élégante grâce à
+              Tailwind. Les composants sont mis en valeur par la bibliothèque
+              React Awesome, offrant une expérience utilisateur moderne.
+            </>
+          }
+        >
+          <img className="tech-logo" src={ReactLogo} alt="" />
+          <img className="tech-logo" src={Vite} alt="" />
+          <img className="tech-logo" src={Tailwind} alt="" />
+        </Card>
+
+        <Card
           image={ComU}
           eyeLink="https://com-u-b7h2.vercel.app/"
           githubLink="https://github.com/ThomasPtht/Com-U"
@@ -57,7 +81,7 @@ const Projects = () => {
           text={
             <>
               Projet personnel de création d'un site web pour une agence
-              marketing/communication
+              marketing/communication.
               <br />
               <br />
               Réalisé avec React, le builder Vite et ainsi que Tailwind pour
