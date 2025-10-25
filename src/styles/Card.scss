@@ -18,28 +18,30 @@
 
 .card-text {
   @media (max-width: 400px) {
-   font-size: 0.9em;
-         
-     }
+    font-size: 0.9em;
+
+  }
 }
 
 .image-container {
   position: relative;
- 
+
 }
 
 .card-image {
   position: relative;
-  height: 201px;
+  height: 200px;
   max-width: 100%;
   border-radius: 15px;
   transition: filter 0.3s;
+
   @media (max-width: 400px) {
     height: 160px;
-          
-      }
-  
+
+  }
+
 }
+
 .image-container:hover .card-image {
   filter: brightness(0.6);
 }
@@ -47,13 +49,14 @@
 .image-container:hover .icons {
   display: flex;
 }
+
 .icons {
- display: none;
- gap: 30px;
+  display: none;
+  gap: 30px;
   position: absolute;
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
 }
 
@@ -75,14 +78,15 @@
 }
 
 .card-title {
-text-align: left;
-padding-bottom: 0;
+  text-align: left;
+  padding-bottom: 0;
   font-size: 1.5em;
   color: rgb(0, 0, 159);
+
   @media (max-width: 400px) {
     font-size: 1.2em;
-          
-      }
+
+  }
 }
 
 .tech-buttons {

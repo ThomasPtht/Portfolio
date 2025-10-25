@@ -73,7 +73,7 @@ const Header = () => {
           <a href="#projects-title">mes projets</a>
           <a href="#contact-title">contact</a>
           <a
-            href="https://drive.google.com/file/d/1X1fEXoc2TYPm467XAbAaeQeHaRRLU6jn/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1HuRni4luQzpp9jvpnksvom-DsDTqNGHZ/view?usp=drive_link"
             target="_blank"
             className="button-cv"
           >

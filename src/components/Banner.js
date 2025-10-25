@@ -14,7 +14,7 @@ const Banner = () => {
           </span>
         </p>
         Je suis <span className="firstname">Thomas Potherat</span>, <br />
-        <p className="typewriter">développeur front-end </p>
+        <p className="typewriter">développeur full stack </p>
       </div>
       {/* Background effects */}
       <div className="cube"></div>

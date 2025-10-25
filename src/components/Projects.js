@@ -21,6 +21,10 @@ import React from "react";
 import Card from "./Card";
 import ComU from "../assets/com-u.png";
 import Move from "../assets/move-on.png";
+import Sonar from "../assets/Sonar.png";
+import TypeOrm from "../assets/typeOrm.png";
+import PostgreSQL from "../assets/Postgresql.png";
+import GraphQL from "../assets/graphql.png";
 
 const Projects = () => {
   const revealCardsContainer = () => {
@@ -50,6 +54,29 @@ const Projects = () => {
       <h2 id="projects-title">PROJETS</h2>
       <div className="underline"></div>
       <div className="cards-container reveal fade-bottom">
+
+<Card
+          image={Sonar}
+          eyeLink=""
+          githubLink="https://github.com/WildCodeSchool/2024-09-wns-bleu-3"
+          title="Sonar"
+          text={
+            <>
+             Application web de monitoring d'adresses URLs.
+              <br />
+              <br />
+              Réalisé en React pour le frontend et GraphQL Yoga avec Express pour le backend, PostgreSQL pour la base de données ainsi que TypeORM pour échanger avec celle ci. Intégration d'authentification sécurisée, pipeline CI/CD.
+            </>
+          }
+        >
+          <img className="tech-logo" src={ReactLogo} alt="" />
+           <img className="tech-logo" src={PostgreSQL} alt="" />
+           <img className="tech-logo" src={TypeOrm} alt="" />
+          <img className="tech-logo" src={GraphQL} alt="" />
+          <img className="tech-logo" src={Tailwind} alt="" />
+        </Card>
+
+
         <Card
           image={Move}
           eyeLink="https://move-on-pi.vercel.app/"
@@ -69,6 +96,7 @@ const Projects = () => {
           }
         >
           <img className="tech-logo" src={ReactLogo} alt="" />
+         
           <img className="tech-logo" src={Vite} alt="" />
           <img className="tech-logo" src={Tailwind} alt="" />
         </Card>
@@ -140,17 +168,7 @@ const Projects = () => {
           <img className="tech-logo" src={Html} alt="" />
           <img className="tech-logo" src={Css} alt="" />
         </Card>
-        <Card
-          image={Portfolio}
-          eyeLink=""
-          githubLink="https://github.com/ThomasPtht/Portfolio"
-          title="Portfolio"
-          text="
-          La conception de mon portfolio avec React a été l'occasion d'appliquer mes compétences acquises, mettant en œuvre une structure basée sur des composants. Utilisation de Sass pour une gestion avancée des styles, ajout de librairies pour optimiser le formulaire et ajouter des effets spécifiques, contribuant ainsi à un résultat dynamique et professionnel."
-        >
-          <img className="tech-logo" src={ReactLogo} alt="" />
-          <img className="tech-logo" src={Sass} alt="" />
-        </Card>
+        
         <Card
           image={Meteo}
           eyeLink="https://meteo-website.netlify.app/"

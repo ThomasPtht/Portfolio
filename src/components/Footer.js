@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="socials-footer">
         <Socials customStyle />
       </div>
-      <div className="copyright">Copyright &copy;2023 par Thomas Potherat</div>
+      <div className="copyright">Copyright &copy;2025 par Thomas Potherat</div>
     </div>
   );
 };
