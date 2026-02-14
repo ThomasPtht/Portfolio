@@ -54,6 +54,7 @@ const Header = () => {
               className="menu__item"
               href="https://drive.google.com/file/d/1X1fEXoc2TYPm467XAbAaeQeHaRRLU6jn/view?usp=drive_link"
               target="_blank"
+              rel="noreferrer"
               onClick={toggle}
             >
               mon cv
@@ -75,6 +76,7 @@ const Header = () => {
           <a
             href="https://drive.google.com/file/d/1HuRni4luQzpp9jvpnksvom-DsDTqNGHZ/view?usp=drive_link"
             target="_blank"
+            rel="noreferrer"
             className="button-cv"
           >
             Télécharger CV
