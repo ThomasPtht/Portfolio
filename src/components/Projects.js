@@ -22,9 +22,13 @@ import Card from "./Card";
 import ComU from "../assets/com-u.png";
 import Move from "../assets/move-on.png";
 import Sonar from "../assets/Sonar.png";
+import MTB from "../assets/my-travel-book.png";
 import TypeOrm from "../assets/typeOrm.png";
 import PostgreSQL from "../assets/Postgresql.png";
 import GraphQL from "../assets/graphql.png";
+import NextJs from "../assets/next-js.svg";
+import Prisma from "../assets/prisma.png";
+import PulseOn from "../assets/pulseon.png";
 
 const Projects = () => {
   const revealCardsContainer = () => {
@@ -54,6 +58,50 @@ const Projects = () => {
       <h2 id="projects-title">PROJETS</h2>
       <div className="underline"></div>
       <div className="cards-container reveal fade-bottom">
+
+        <Card
+          image={MTB}
+  
+          githubLink="https://github.com/ThomasPtht/MyTravelBook/tree/main"
+          title="My Travel Book"
+          text={
+            <>
+             Web App permettant aux utilisateurs de lister leurs voyages en leur attribuant une note et un commentaire, ainsi que de les visualiser sur une carte interactive.
+              <br />
+              <br />
+              Build avec Next.js 16, Prisma et PostgreSql pour le backend. NextAuth pour l'authentification.
+              Tests avec Jest, React Testing Library.
+            </>
+          }
+        >
+          <img className="tech-logo" src={NextJs} alt="" />
+           <img className="tech-logo" src={Prisma} alt="" />
+           <img className="tech-logo" src={PostgreSQL} alt="" />
+          <img className="tech-logo" src={Tailwind} alt="" />
+        </Card>
+
+<Card
+          image={PulseOn}
+          eyeLink=""
+          githubLink="https://github.com/ThomasPtht/PulseOn"
+          title="PulseOn"
+          text={
+            <>
+           App permettant de saisir et analyser ses séances de sport(running et musculation)
+              <br />
+              <br />
+              Frontend en React, TypeScript et Apollo Client. Back en Node.js, Express et Apollo Server, avec TypeORM et PostgreSQL.
+Auth sécurisée via JWT et argon2.
+Tests via Vitest et React Testing Library.
+            </>
+          }
+        >
+          <img className="tech-logo" src={ReactLogo} alt="" />
+           <img className="tech-logo" src={PostgreSQL} alt="" />
+           <img className="tech-logo" src={TypeOrm} alt="" />
+          <img className="tech-logo" src={GraphQL} alt="" />
+          <img className="tech-logo" src={Tailwind} alt="" />
+        </Card>
 
 <Card
           image={Sonar}
@@ -181,7 +229,7 @@ const Projects = () => {
           <img className="tech-logo" src={Html} alt="" />
           <img className="tech-logo" src={Css} alt="" />
         </Card>
-        <Card
+        {/* <Card
           image={Booki}
           eyeLink="https://booki-177e95.netlify.app/"
           githubLink="https://github.com/ThomasPtht/BOOKI"
@@ -190,7 +238,7 @@ const Projects = () => {
         >
           <img className="tech-logo" src={Html} alt="" />
           <img className="tech-logo" src={Css} alt="" />
-        </Card>
+        </Card> */}
         <Card
           image={Manaia}
           eyeLink="https://manaia-bijoux.fr/"
