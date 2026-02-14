@@ -1,7 +1,6 @@
 import "../styles/Projects.scss";
 import Bluel from "../assets/Bluel-capture.png";
 import Kasa from "../assets/kasa.png";
-import Booki from "../assets/Booki.png";
 import Manaia from "../assets/Manaia-bijoux.png";
 import ReactLogo from "../assets/react-logo.png";
 import Wordpress from "../assets/Wordpress-logo.png";
@@ -15,9 +14,9 @@ import Sass from "../assets/sass-logo.png";
 import Mongo from "../assets/mongodb-logo.png";
 import Tailwind from "../assets/tailwind.png";
 import Vite from "../assets/vite.png";
-import Portfolio from "../assets/portfolio.png";
+
 import Meteo from "../assets/meteo-website.png";
-import React from "react";
+
 import Card from "./Card";
 import ComU from "../assets/com-u.png";
 import Move from "../assets/move-on.png";
