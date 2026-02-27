@@ -57,72 +57,78 @@ const Projects = () => {
       <h2 id="projects-title">PROJETS</h2>
       <div className="underline"></div>
       <div className="cards-container reveal fade-bottom">
-
         <Card
           image={MTB}
-  
+          eyeLink="https://my-travel-book-omega.vercel.app/"
           githubLink="https://github.com/ThomasPtht/MyTravelBook/tree/main"
           title="My Travel Book"
           text={
             <>
-             Web App permettant aux utilisateurs de lister leurs voyages en leur attribuant une note et un commentaire, ainsi que de les visualiser sur une carte interactive.
+              Web App permettant aux utilisateurs de lister leurs voyages en
+              leur attribuant une note et un commentaire, ainsi que de les
+              visualiser sur une carte interactive.
               <br />
               <br />
-              Build avec Next.js 16, Prisma et PostgreSql pour le backend. NextAuth pour l'authentification.
-              Tests avec Jest, React Testing Library.
+              Build avec Next.js 16, Prisma et PostgreSql pour le backend.
+              NextAuth pour l'authentification. Tests avec Jest, React Testing
+              Library.
             </>
           }
         >
           <img className="tech-logo" src={NextJs} alt="" />
-           <img className="tech-logo" src={Prisma} alt="" />
-           <img className="tech-logo" src={PostgreSQL} alt="" />
+          <img className="tech-logo" src={Prisma} alt="" />
+          <img className="tech-logo" src={PostgreSQL} alt="" />
           <img className="tech-logo" src={Tailwind} alt="" />
         </Card>
 
-<Card
+        <Card
           image={PulseOn}
           eyeLink=""
           githubLink="https://github.com/ThomasPtht/PulseOn"
           title="PulseOn"
           text={
             <>
-           App permettant de saisir et analyser ses séances de sport(running et musculation)
+              App permettant de saisir et analyser ses séances de sport(running
+              et musculation)
               <br />
               <br />
-              Frontend en React, TypeScript et Apollo Client. Back en Node.js, Express et Apollo Server, avec TypeORM et PostgreSQL.
-Auth sécurisée via JWT et argon2.
-Tests via Vitest et React Testing Library.
+              Frontend en React, TypeScript et Apollo Client. Back en Node.js,
+              Express et Apollo Server, avec TypeORM et PostgreSQL. Auth
+              sécurisée via JWT et argon2. Tests via Vitest et React Testing
+              Library.
             </>
           }
         >
           <img className="tech-logo" src={ReactLogo} alt="" />
-           <img className="tech-logo" src={PostgreSQL} alt="" />
-           <img className="tech-logo" src={TypeOrm} alt="" />
+          <img className="tech-logo" src={PostgreSQL} alt="" />
+          <img className="tech-logo" src={TypeOrm} alt="" />
           <img className="tech-logo" src={GraphQL} alt="" />
           <img className="tech-logo" src={Tailwind} alt="" />
         </Card>
 
-<Card
+        <Card
           image={Sonar}
           eyeLink=""
           githubLink="https://github.com/WildCodeSchool/2024-09-wns-bleu-3"
           title="Sonar"
           text={
             <>
-             Application web de monitoring d'adresses URLs.
+              Application web de monitoring d'adresses URLs.
               <br />
               <br />
-              Réalisé en React pour le frontend et GraphQL Yoga avec Express pour le backend, PostgreSQL pour la base de données ainsi que TypeORM pour échanger avec celle ci. Intégration d'authentification sécurisée, pipeline CI/CD.
+              Réalisé en React pour le frontend et GraphQL Yoga avec Express
+              pour le backend, PostgreSQL pour la base de données ainsi que
+              TypeORM pour échanger avec celle ci. Intégration
+              d'authentification sécurisée, pipeline CI/CD.
             </>
           }
         >
           <img className="tech-logo" src={ReactLogo} alt="" />
-           <img className="tech-logo" src={PostgreSQL} alt="" />
-           <img className="tech-logo" src={TypeOrm} alt="" />
+          <img className="tech-logo" src={PostgreSQL} alt="" />
+          <img className="tech-logo" src={TypeOrm} alt="" />
           <img className="tech-logo" src={GraphQL} alt="" />
           <img className="tech-logo" src={Tailwind} alt="" />
         </Card>
-
 
         <Card
           image={Move}
@@ -143,7 +149,7 @@ Tests via Vitest et React Testing Library.
           }
         >
           <img className="tech-logo" src={ReactLogo} alt="" />
-         
+
           <img className="tech-logo" src={Vite} alt="" />
           <img className="tech-logo" src={Tailwind} alt="" />
         </Card>
@@ -215,7 +221,7 @@ Tests via Vitest et React Testing Library.
           <img className="tech-logo" src={Html} alt="" />
           <img className="tech-logo" src={Css} alt="" />
         </Card>
-        
+
         <Card
           image={Meteo}
           eyeLink="https://meteo-website.netlify.app/"
