@@ -10,9 +10,12 @@ const Card = ({ image, title, text, eyeLink, githubLink, children }) => {
         <div className="image-container">
           <img className="card-image" src={image} alt={title} />
           <div className="icons">
-            <a href={eyeLink} target="_blank" rel="noopener noreferrer">
-              <img className="icon-card" src={eye} alt="" />
-            </a>
+            {/* Afficher le logo uniquement si eyeLink à une valeur définie */}
+            {eyeLink && (
+              <a href={eyeLink} target="_blank" rel="noopener noreferrer">
+                <img className="icon-card" src={eye} alt="" />
+              </a>
+            )}
             {/* Afficher le logo uniquement si githubLink à une valeur définie */}
             {githubLink && (
               <a href={githubLink} target="_blank" rel="noopener noreferrer">
